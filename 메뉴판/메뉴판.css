@@ -1,0 +1,549 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: '빙';
+}
+
+#totalPrice1,#totalPrice2,#totalPrice3,#totalPrice4,#totalPrice5 #totalPrice6,#totalPrice7,#totalPrice8,#totalPrice9,#totalPrice10,#totalPrice11,#totalPrice12,#totalPrice13,#totalPrice14,#totalPrice15,#totalPrice16,#totalPrice17,#totalPrice18,#totalPrice19,#totalPrice20, #totalPrice21,#totalPrice22, #totalPrice23,#totalPrice24,#totalPrice25,#totalPrice26,#totalPrice27,#totalPrice28,#totalPrice29,#totalPrice30,#totalPrice31,#totalPrice32,#totalPrice33{display: none;}
+#amount1,#amount2,#amount3,#amount4,#amount7,#amount8,#amount9,#amount10,#amount11,#amount12,#amount13,#amount14,#amount15,#amount16,#amount17,#amount18,#amount19,#amount20, #amount21,#amount22, #amount23,#amount24,#amount25,#amount26,#amount27,#amount28,#amount29,#amount30,#amount31,#amount32,#amount33{display: none;
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left:25px;
+    font-size: 20px;
+    font-weight: bold; 
+    color:white;
+    top:10%;}
+
+#amount5, #amount6{
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left:25px;
+    font-size: 20px;
+    font-weight: bold; 
+    color:white;
+    top:10%;
+}
+
+#header{height: 140px;  line-height: 140px; color: black; font-size: 50px; background-color: #E0D8B0ea; }
+
+#banner{text-align: center; height: 450px; line-height: 450px ; opacity: 0.5; font-size: 30px; }
+.center{ font-family: '빙'; vertical-align:60px;}
+.right1, .right2{font-family: '빙'; vertical-align: 60px; position: absolute; right:0; margin-right: 0px;}
+.right1 {margin-right: 20%;}
+.right2 {margin-right: 10%;}
+a:link {color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+.right1 a:hover, .right2 a:hover  { color: black; font-size: 120%;}
+
+mark{
+    color :#DEA057;
+    background-color: rgba(255, 255, 255, 0);
+}
+@font-face {
+font-family: '빙';
+src: url('../빙.otf') format('truetype');
+}
+ul li{float: left;}
+
+.container {
+    border:3px solid yellow;
+    width : 100%;
+    height: 1000px;
+    position: relative;
+}
+.classify {
+    margin-top: 30px;
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+}
+.row div {
+    
+    width:293px;    
+    height:293px;
+}
+
+.row{display: flex; flex-direction:row; justify-content: center; margin-top: 2%;}
+
+.row > div {
+    margin-right: 2% ;
+}
+mark{font-size: 30px;}
+
+
+/*계산기*/
+.mini_nav {
+    background-image: url(계산기/칠판.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:25%;
+    right: 3%;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.0);
+    border-radius: 10px;
+
+
+    
+}
+
+.cal {
+    position: absolute;
+    border: none;
+    min-width: 30px;
+    min-height: 20px;
+    background: #DEA057;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    height:26px;
+    width: 100px;
+    font-size: 22px;
+    bottom: 38%;
+    left: 15%
+}
+/*가격 초기화 버튼*/
+.reset{
+    position: absolute;
+    border: none;
+    min-width: 30px;
+    min-height: 20px;
+    background: #DEA057;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    height:26px;
+    width: 100px;
+    font-size: 22px;
+    bottom: 38%;
+    left: 50%
+}
+
+.reset:active, .cal:active {
+    transform: scale(1.2);
+}
+#totalPrice {
+    background-color: rgba(255,255,255,0.0);
+    position: absolute;
+    border: none;
+    left: 20%;
+    bottom: 43%;
+    font-size: 20px;
+    font-weight: bold; 
+    color:white;
+    
+}
+#totalPrice1{
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left : 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+
+#totalPrice2 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left : 12%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+
+#totalPrice3{
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left : 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+
+#totalPrice4 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left : 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+
+#totalPrice5 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left : 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice6 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left : 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice7 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice8 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice9 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice10 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice11 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice12 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice13 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice14 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice15 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice16 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice17 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice18 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice19 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice20 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice21 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice22 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice23 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice24 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice25 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice26 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice27 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice28 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice29 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice30 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice31 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice32 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+#totalPrice33 {
+    background-color: rgba(255,255,255,0.0);
+    position: relative;
+    border: none;
+    left: 12%;
+    font-size: 20px;
+    font-weight: bold; 
+    color: white;
+    top:10%;
+}
+.going {
+    position: absolute;
+    top: 9%;
+    left:29%;
+    font-size: 34px;
+    color: white;
+}
+
+
+#totalNumber {
+    display: none;
+}
+/* 버튼 css */
+.button {
+    position: relative;
+    border: none;
+    min-width: 30px;
+    min-height: 20px;
+    background: #DEA057;
+    border-radius: 50px;
+    color: darkslategray;
+    cursor: pointer;
+    font-weight: 700;
+    height:26px;
+    width: 40px;
+    font-size: 25px;
+}
+
+.button:hover {
+    background-color: #DEA057;
+    color: #d4dfe6;
+    transform: scale(1.2);
+}
+
+
+.button:active {
+    transform: scale(1.8);
+}
+.textAll {
+    border: 3px solid #DEA057;
+    color: #6e6e6e;
+    border-radius: 50px;
+    text-align: center;
+    height:26px;
+    width:70px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.price {
+    border: 1px solid rgba(255, 255, 255, 0) ;
+    background-color: rgba(255, 255, 255, 0);
+    color:#DEA057;
+    text-align: center;
+    height:26px;
+    width:70px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*footer map*/
+.map-b{display: flex; flex-direction:row; position: relative; justify-content : space-around;}
+.map-box{position: relative; justify-content: center;  align-items:center; height: 400px; width: 100%; display: flex; }
+.map{border:1px solid black; position: relative ; justify-content: center;  width: 400px; height: 220px; }
+.font { top: 10%; height: 50px; font-family: '빙'; line-height: 20px; font-size: 25px; text-align: center; }
+.introduce{ font-family: '빙'; font-size: 50px;}
+
+
+.foot{ position : absolute; bottom : 0; display: flex; color: black; background-color: #CE9461; position: relative;  justify-content: space-around; height: 400px; border-top: 4px solid #3d250a;
+    margin-top:10%; z-index :100;
+}
+
+#font-1{ font-size: 20px;}
+.space{height: 50px;}

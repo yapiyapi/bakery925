@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="메뉴판.css">
+    <title>Document</title>
+    <style>
+        .img {
+            position: relative; opacity: 1; 
+        }
+        .text {position: absolute; ; visibility:hidden; bottom:0; color: white; opacity: 0; background: rgba(0, 0, 0, 0.447); align-items: center; display: flex;
+      flex-direction: column; text-align:center; justify-content: center; line-height: 30px; font-family: '빙'; font-size: 25px;} 
+
+        .img:hover .text,.img:hover .cart {visibility:visible; opacity: 1;} 
+        
+        .cart{
+            position: relative;
+            visibility: hidden;
+            margin-top: 0;;
+            text-align: center;
+            bottom:15%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="../index.html"><img src="../사진/빵쪼가리.png" width="150" height="150"  alt="빵이모지" ><span class="center" >Bakery 925</span></a>
+        <span class="right1"><a href="메뉴판.html">메뉴</a></span>
+        <span class="right2"><a href="../about.html">About</a></span>
+    </div> 
+    <form action="" method="" onSubmit="return false">
+        <div class="classify">
+            Bread & Pastry
+        </div>
+        <div class="row">
+            <div class="img" id="_1">
+                <img src= "빵이미지/소금버터롤.jpg" width="293px " height="293px "><div class="text"><p>겉에는 소금이 뿌려져 있고, 속에는 버터가 스며들어있는 <mark>소금버터롤!</mark><br>그래서 겉은 바삭하고 짭잘하며 속은 촉촉 쫀득하고 고소해요.<br>925의 대표메뉴!</p></div>
+                    <div class="cart">
+                        <input class = "price" id="price" type="text" size="2" value="2000원" disabled/> <!--disable 읽기만 가능, 클릭해도 클릭불가-->
+                    <input class = "textAll" id="book1" type="text" size="2" value="0" min = "0"/> 
+                    <input type="button" class = "button" id="book1" value="+" onclick="click1(this)">
+                    <input type="button" class = "button" id="book1" value="-" onclick="click2(this)">
+                    <input id="book1Total" type="text" size= "6" value="0" hidden/>
+                    </div>
+            </div>
+        <div class="img" id="_2"><img src="빵이미지/감자사라다.jpg" width="293px " height="293px "><div class="text"><p>감자와 계란으로 만든 수제 토핑을 넣은 추억의 <mark>사라다빵</mark>이에요.<br>하나만 먹어도 든든해서 식사대용으로 제격이에요.</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book2" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book2" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book2" value="-" onclick="click2(this)">
+                <input id="book2Total" type="text" size= "6" value="0" hidden/>
+            </div>
+            </div>
+        <div class="img" id="_3"><img src="빵이미지/에그타르트.jpg" width="293px " height="293px "><div class="text"><p>마다가스카르 바닐라빈을 아끼지 않고 만들었어요.<br>향긋한 바닐라향이 기분까지 달달하게 만드는 바삭한 <mark>에그타르트</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book3" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book3" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book3" value="-" onclick="click2(this)">
+                <input id="book3Total" type="text" size= "6" value="0" hidden/>
+            </div>
+        </div>
+
+        </div>
+        <div class="row" id="row2">
+            <div class="img" id="_4"><img src= "빵이미지/단팥빵.jpg" width="293px " height="293px "><div class="text"><p>직접 끓인 팥으로 만든 <mark>단팥빵</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1200원" disabled/>
+                <input class = "textAll" id="book4" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book4" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book4" value="-" onclick="click2(this)">
+                <input id="book4Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_5"><img src="빵이미지/레몬모찌.jpg" width="293px " height="293px "><div class="text"><p>탕종으로 만든 빵에 직접 담근 레몬청으로 만든 레몬크림치즈를 넣은 쫄깃한 <br><mark>레몬모찌</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book5" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book5" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book5" value="-" onclick="click2(this)">
+                <input id="book5Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_6"> <img src="빵이미지/크로크무슈.jpg" width="293px " height="293px "><div class="text"><p>달달한 빵 사이 햄과 치즈가 들어있어 단짠단짠이 매력적인 <mark>크로크무슈</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book6" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book6" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book6" value="-" onclick="click2(this)">
+                <input id="book6Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+        </div>
+        <div class="row" id="row3">
+            <div class="img" id="_7"><img src= "빵이미지/소세지빵.jpg" width="293px " height="293px "><div class="text"><p>통통한 그릴 소세지가 들어있는 <br><mark>소세지빵</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2800원" disabled/>
+                <input class = "textAll" id="book7" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book7" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book7" value="-" onclick="click2(this)">
+                <input id="book7Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_8"><img src="빵이미지/우유식빵.jpg" width="293px " height="293px "><div class="text"><p>부드러운 <mark>우유식빵</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book8" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book8" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book8" value="-" onclick="click2(this)">
+                <input id="book8Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_9"><img src="빵이미지/밤식빵.jpg" width="293px " height="293px "><div class="text"><p>부드러운 브리오슈 빵에 달달한 밤이 들어있는 <mark>밤식빵</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="4000원" disabled/>
+                <input class = "textAll" id="book9" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book9" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book9" value="-" onclick="click2(this)">
+                <input id="book9Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+        </div>
+        <div class="row" id="row4">
+            <div class="img" id="_10"><img src= "빵이미지/블루베리식빵.jpg" width="293px " height="293px "><div class="text"><p>부드러운 브리오슈 빵에 블루베리 콩포트가 들어있는 <mark>블루베리 식빵</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="4000원" disabled/>
+                <input class = "textAll" id="book10" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book10" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book10" value="-" onclick="click2(this)">
+                <input id="book10Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_11"><img src="빵이미지/모닝빵.jpg" width="293px " height="293px "><div class="text"><p>굿모닝~ <mark>모닝빵</mark>입니다</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2400원" disabled/>
+                <input class = "textAll" id="book11" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book11" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book11" value="-" onclick="click2(this)">
+                <input id="book11Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_12"><img src="빵이미지/갈릭모닝.jpg" width="293px " height="293px "><div class="text"><p>빵 사이사이마다 마늘 크림이 스며들어가 진한 마늘향을 느낄 수 있는 <br><mark>갈릭모닝</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3500원" disabled/>
+                <input class = "textAll" id="book12" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book12" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book12" value="-" onclick="click2(this)">
+                <input id="book12Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+        </div>
+        <div class="row" id="row5">
+            <div class="img" id="_13"><img src= "빵이미지/야채고로케.jpg" width="293px " height="293px "><div class="text"><p>남녀노소 모두 좋아하는 속이 꽉 찬 <br><mark>야채고로케</mark>입니다</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2800원" disabled/>
+                <input class = "textAll" id="book13" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book13" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book13" value="-" onclick="click2(this)">
+                <input id="book13Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_14"><img src="빵이미지/치아바타앙버터.jpg" width="293px " height="293px "><div class="text"><p>부드러운 치아바타에 직접 만든 팥과 이즈니 버터가 들어간 <br><mark>치아바타 앙버터</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3200원" disabled/>
+                <input class = "textAll" id="book14" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book14" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book14" value="-" onclick="click2(this)">
+                <input id="book14Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_15"><img src="빵이미지/바게트.jpg" width="293px " height="293px "><div class="text"><p>설탕, 버터, 계란, 우유를 넣지 않고 프랑스 밀가루로 만든 겉은 바삭하고 속은 촉촉한 천연발효종 <mark>바게트</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3500원" disabled/>
+                <input class = "textAll" id="book15" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book15" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book15" value="-" onclick="click2(this)">
+                <input id="book15Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+        </div>
+        <div class="row" id="row6">
+            <div class="img" id="_16"><img src= "빵이미지/통밀깜빠뉴.jpg" width="293px " height="293px "><div class="text"><p>설탕, 버터, 계란, 우유를 넣지 않고 유기농 통밀가루로 만든 천연발효종 <br><mark>통밀깜빠뉴</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book16" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book16" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book16" value="-" onclick="click2(this)">
+                <input id="book16Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_17"><img src="빵이미지/호두베리바게트.jpg" width="293px " height="293px "><div class="text"><p>호두가 들어가 고소하고, 설탕의 단 맛을 크랜베리로 대체해 더욱 건강한 천연발효종 <mark>크랜베리 바게트</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3500원" disabled/>
+                <input class = "textAll" id="book17" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book17" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book17" value="-" onclick="click2(this)">
+                <input id="book17Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_18"><img src="빵이미지/꽈배기.jpg" width="293px " height="293px "><div class="text"><p>시나몬 슈가가 솔솔 뿌려진 <mark>꽈배기</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1300원" disabled/>
+                <input class = "textAll" id="book18" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book18" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book18" value="-" onclick="click2(this)">
+                <input id="book18Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+        </div>
+        <div class="row" id="row7">
+            <div class="img" id="_19"><img src= "빵이미지/파이만주.jpg" width="293px " height="293px "><div class="text"><p>바삭한 파이와 달달한 통팥이 조화로운 <mark>파이만주</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1500원" disabled/>
+                <input class = "textAll" id="book19" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book19" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book19" value="-" onclick="click2(this)">
+                <input id="book19Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_20"><img src="빵이미지/크로와상.jpg" width="293px " height="293px "><div class="text"><p>이즈니 버터로 만든 바삭한 <br><mark>크로와상</mark>입니다</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3000원" disabled/>
+                <input class = "textAll" id="book20" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book20" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book20" value="-" onclick="click2(this)">
+                <input id="book20Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_21"><img src="빵이미지/초코크로와상.jpg" width="293px " height="293px "><div class="text"><p>초코 가나슈로 채워진 <br><mark>초코 크로와상</mark>입니다</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3500원" disabled/>
+                <input class = "textAll" id="book21" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book21" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book21" value="-" onclick="click2(this)">
+                <input id="book21Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+        </div>
+        <!--디저트-->
+        <div class="row" id="row8">
+            <div class="img" id="_22"><img src= "빵이미지/아몬드크로와상.jpg" width="293px " height="293px "><div class="text"><p>아몬드가 듬뿍 올라가 고소한 <mark>아몬드크루와상</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="3500원" disabled/>
+                <input class = "textAll" id="book22" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book22" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book22" value="-" onclick="click2(this)">
+                <input id="book22Total" type="text" size= "6" value="0" hidden/>
+            </div></div>    
+            <div class="img" id="_23"><img src= "빵이미지/초코스콘.jpg" width="293px " height="293px "><div class="text"><p>초코칩이 박혀있는 촉촉한 <mark>초코스콘</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1800원" disabled/>
+                <input class = "textAll" id="book23" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book23" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book23" value="-" onclick="click2(this)">
+                <input id="book23Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_24"><img src= "빵이미지/녹차스콘.jpg" width="293px " height="293px "><div class="text"><p>밀크 초코가 들어 있고, 제주산 녹차로 만들어 은은한 녹차향이 일품인 <br><mark>녹차스콘</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1800원" disabled/>
+                <input class = "textAll" id="book24" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book24" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book24" value="-" onclick="click2(this)">
+                <input id="book24Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            
+        </div>
+        <div class="row" id="row9">
+            <div class="img" id="_25"><img src= "빵이미지/크랜베리스콘.jpg" width="293px " height="293px "><div class="text"><p>크랜베리가 들어있는 달지 않은 <br><mark>크랜베리스콘</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="2000원" disabled/>
+                <input class = "textAll" id="book25" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book25" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book25" value="-" onclick="click2(this)">
+                <input id="book25Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_26"><img src= "빵이미지/레몬파운드.jpg" width="293px " height="293px "><div class="text"><p>레몬 글라사주가 코팅된 촉촉한 <br><mark>레몬파운드</mark>입니다</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1800원" disabled/>
+                <input class = "textAll" id="book26" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book26" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book26" value="-" onclick="click2(this)">
+                <input id="book26Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_27"><img src= "빵이미지/밀크티.jpg" width="293px " height="293px "><div class="text"><p>은은한 수레국화 향과 베르가못 향이 마음을 편하게 해주는 직접 브렌딩한 <br><mark>밀크티</mark>입니다</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="6500원" disabled/>
+                <input class = "textAll" id="book27" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book27" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book27" value="-" onclick="click2(this)">
+                <input id="book27Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            
+        </div>
+        <div class="row" id="row10">
+            <div class="img" id="_28"><img src= "빵이미지/초코휘낭시에.jpg" width="293px " height="293px "><div class="text"><p>버터향이 은은한 겉바속촉 <br><mark>초코휘낭시에</mark>예요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1800원" disabled/>
+                <input class = "textAll" id="book28" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book28" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book28" value="-" onclick="click2(this)">
+                <input id="book28Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_29"><img src= "빵이미지/레몬마들렌.jpg" width="293px " height="293px "><div class="text"><p>레몬 글라사주가 도포된 부드러운 <br><mark>레몬마들렌</mark>이에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1800원" disabled/>
+                <input class = "textAll" id="book29" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book29" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book29" value="-" onclick="click2(this)">
+                <input id="book29Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_30"><img src= "빵이미지/초코마들렌.jpg" width="293px " height="293px "><div class="text"><p>다크 초코가 코팅된 <mark>초코마들렌</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1800원" disabled/>
+                <input class = "textAll" id="book30" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book30" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book30" value="-" onclick="click2(this)">
+                <input id="book30Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            
+        </div>
+        <div class="row" id="row11">
+            <div class="img" id="_31"><img src= "빵이미지/아몬드비스코티.jpg" width="293px " height="293px "><div class="text"><p>아몬드가 듬뿍 들어있는 바삭한 <br><mark>아몬드비스코티</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1300원" disabled/>
+                <input class = "textAll" id="book31" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book31" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book31" value="-" onclick="click2(this)">
+                <input id="book31Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_32"><img src= "빵이미지/초코비스코티.jpg" width="293px " height="293px "><div class="text"><p>호두, 헤이즐넛, 초코칩이 들어있는 바삭한 <mark>초코비스코티</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="1300원" disabled/>
+                <input class = "textAll" id="book32" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book32" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book32" value="-" onclick="click2(this)">
+                <input id="book32Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            <div class="img" id="_33"><img src= "빵이미지/산딸기롤.jpg" width="293px " height="293px "><div class="text"><p>산딸기잼이 매력적인 부드러운 <br><mark>산딸기롤</mark>에요</p></div>
+            <div class="cart">
+                <input class = "price" id="price" type="text" size="2" value="7000원" disabled/>
+                <input class = "textAll" id="book33" type="text" size="2" value="0" min = "0"/> 
+                <input type="button" class = "button" id="book33" value="+" onclick="click1(this)">
+                <input type="button" class = "button" id="book33" value="-" onclick="click2(this)">
+                <input id="book33Total" type="text" size= "6" value="0" hidden/>
+            </div></div>
+            
+        </div>
+        <div class="mini_nav">
+            <div>&nbsp</div>
+            <div>&nbsp</div>
+            <input id="totalNumber" type="text" size="2" value="0" disabled></input>
+            
+            <input id="totalPrice1" type="text" size="10" value="" disabled></input>
+            <input id="amount1" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice2" type="text" size="10" value="" disabled></input>
+            <input id="amount2" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice3" type="text" size="10" value="" disabled></input>
+            <input id="amount3" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice4" type="text" size="10" value="" disabled></input>
+            <input id="amount4" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice5" type="text" size="10" value="" disabled></input>
+            <input id="amount5" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice6" type="text" size="10" value="" disabled></input>
+            <input id="amount6" type="text" style="width:30px" value="" disabled></input>
+            
+            <input id="totalPrice7" type="text" size="10" value="" disabled></input>
+            <input id="amount7" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice8" type="text" size="10" value="" disabled></input>
+            <input id="amount8" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice9" type="text" size="10" value="" disabled></input>
+            <input id="amount9" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice10" type="text" size="10" value="" disabled></input>
+            <input id="amount10" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice11" type="text" size="10" value="" disabled></input>
+            <input id="amount11" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice12" type="text" size="10" value="" disabled></input>
+            <input id="amount12" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice13" type="text" size="10" value="" disabled></input>
+            <input id="amount13" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice14" type="text" size="10" value="" disabled></input>
+            <input id="amount14" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice15" type="text" size="10" value="" disabled></input>
+            <input id="amount15" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice16" type="text" size="10" value="" disabled></input>
+            <input id="amount16" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice17" type="text" size="10" value="" disabled></input>
+            <input id="amount17" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice18" type="text" size="10" value="" disabled></input>
+            <input id="amount18" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice19" type="text" size="10" value="" disabled></input>
+            <input id="amount19" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice20" type="text" size="10" value="" disabled></input>
+            <input id="amount20" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice21" type="text" size="10" value="" disabled></input>
+            <input id="amount21" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice22" type="text" size="10" value="" disabled></input>
+            <input id="amount22" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice23" type="text" size="10" value="" disabled></input>
+            <input id="amount23" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice24" type="text" size="10" value="" disabled></input>
+            <input id="amount24" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice25" type="text" size="10" value="" disabled></input>
+            <input id="amount25" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice26" type="text" size="10" value="" disabled></input>
+            <input id="amount26" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice27" type="text" size="10" value="" disabled></input>
+            <input id="amount27" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice28" type="text" size="10" value="" disabled></input>
+            <input id="amount28" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice29" type="text" size="10" value="" disabled></input>
+            <input id="amount29" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice30" type="text" size="10" value="" disabled></input>
+            <input id="amount30" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice31" type="text" size="10" value="" disabled></input>
+            <input id="amount31" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice32" type="text" size="10" value="" disabled></input>
+            <input id="amount32" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice33" type="text" size="10" value="" disabled></input>
+            <input id="amount33" type="text" style="width:30px" value="" disabled></input>
+
+            <input id="totalPrice" type="text" size="6" value="총 : 0원" disabled></input>
+            <p class="going">얼마나 나왔지?</p>
+            <input type="button" class = "cal" value="가격 계산" onclick="cal()">
+            <input type="reset" class = "reset" value="가격 비우기">
+        </div>
+
+        <div class="foot">
+            <div class="font" id="findload">
+                <div class="space"></div>
+                찾아오시는 길
+                <div class="space"></div>
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.0083876673734!2d128.10391071554096!3d35.156411566181745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356efbe83f50a231%3A0xb2aaf36bfe6ea7e0!2z67Kg7J207Luk66asOTI1!5e0!3m2!1sko!2skr!4v1652188620637!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="font" ><div class="space"></div>사업자정보<div id="font-1"><br><br><br><br><br><table class="table">
+                <th>대표자명</th>
+                <th>허철</th>
+                <tr>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>상호명</td>
+                    <td>베이커리 925(Bakery925)</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>사업자등록번호&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td>648-25-00921</td>
+                </tr>
+            </table></div></div>
+            
+            <div class="font" ><div class="space"></div>전화 및 운영시간<div id="font-1"><br><br><br><br><br>055) 761 - 0925<br><br>월요일 정기휴무<br><br>09:00 ~ 재고 소진</div></div>
+            <div class="font" ><div class="space"></div>SNS<div id="font-1"><br><br><br><br><br><a href="https://www.instagram.com/bakery_925/" title="인스 타 그램 아이콘"><img src="../사진/insta.png" width="30px"></a>&nbsp&nbsp<a href="https://www.baemin.com/" title="배민 아이콘"><img src="../사진/baemin.png" width="30px"></a>
+            
+             </div></div>
+    
+</form>
+<script src="메뉴판.js">
+</script>
+</body>
+</html>
