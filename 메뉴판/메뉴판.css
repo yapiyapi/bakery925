@@ -4,6 +4,12 @@
     font-family: '빙';
 }
 
+#nav {
+    border-radius: 40px;
+    font-size: 35px;
+}
+
+
 #totalPrice1,#totalPrice2,#totalPrice3,#totalPrice4,#totalPrice5 #totalPrice6,#totalPrice7,#totalPrice8,#totalPrice9,#totalPrice10,#totalPrice11,#totalPrice12,#totalPrice13,#totalPrice14,#totalPrice15,#totalPrice16,#totalPrice17,#totalPrice18,#totalPrice19,#totalPrice20, #totalPrice21,#totalPrice22, #totalPrice23,#totalPrice24,#totalPrice25,#totalPrice26,#totalPrice27,#totalPrice28,#totalPrice29,#totalPrice30,#totalPrice31,#totalPrice32,#totalPrice33{display: none;}
 #amount1,#amount2,#amount3,#amount4,#amount7,#amount8,#amount9,#amount10,#amount11,#amount12,#amount13,#amount14,#amount15,#amount16,#amount17,#amount18,#amount19,#amount20, #amount21,#amount22, #amount23,#amount24,#amount25,#amount26,#amount27,#amount28,#amount29,#amount30,#amount31,#amount32,#amount33{display: none;
     background-color: rgba(255,255,255,0.0);

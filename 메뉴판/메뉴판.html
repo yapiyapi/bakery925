@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="메뉴판.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.67">
+    
+    <title>Bakery925</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <style>
         .img {
             position: relative; opacity: 1; 
@@ -23,13 +28,31 @@
             bottom:15%;
         }
     </style>
+    <link rel="stylesheet" href="메뉴판.css">
 </head>
-<body>
-    <div id="header">
-        <a href="../index.html"><img src="../사진/빵쪼가리.png" width="150" height="150"  alt="빵이모지" ><span class="center" >Bakery 925</span></a>
-        <span class="right1"><a href="메뉴판.html">메뉴</a></span>
-        <span class="right2"><a href="../about.html">About</a></span>
-    </div> 
+<body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-expand-lg bg-light" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../사진/빵쪼가리.png" width="100" height="100"  alt="빵이모지"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../메뉴판/메뉴판.html">메뉴</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../mypage.html">mypage</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <form action="" method="" onSubmit="return false">
         <div class="classify">
             Bread & Pastry
@@ -436,7 +459,7 @@
 
             <input id="totalPrice" type="text" size="6" value="총 : 0원" disabled></input>
             <p class="going">얼마나 나왔지?</p>
-            <input type="button" class = "cal" value="가격 계산" onclick="cal()">
+            <input type="button" class = "cal" value="가격 계산" onclick="purchaseHistory()">
             <input type="reset" class = "reset" value="가격 비우기">
         </div>
 

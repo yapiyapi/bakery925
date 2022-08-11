@@ -267,3 +267,19 @@ function click2(e) {
     if (n33 != 0){document.getElementById("totalPrice33").value = '산딸기롤';document.getElementById("amount33").value = n33} else{document.getElementById("amount33").value = "";document.getElementById("amount33").style.display = 'none'; document.getElementById("totalPrice33").value = '';document.getElementById("totalPrice33").style.display = 'none';}
     }
 
+
+function purchaseHistory(){
+    let name1 = $('#name').val()
+    let comment1 = $('#comment').val()
+
+    $.ajax({
+        type: 'POST',
+        url: '/bakery925',
+        data: {num_give : `num` , name_give : 'name', price_give : 'price'},
+        success: function (response) {
+            alert(response['msg'])
+            window.location.reload()
+        }
+    })
+    console.log('hi');
+}
