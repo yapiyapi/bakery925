@@ -6,12 +6,12 @@
 
 ## 8/12 fetch
 
-1. '/bakery925' 화면에 API 출력
+1. '/bakery925' 화면에 API 출력<br>
 app.get('/bakery925',(req,res)=>{<br>
     res.send(req.body);<br>
 })
 
-2. 서버 콘솔에 req 데이터 출력
+2. 서버 콘솔에 req 데이터 출력<br>
 app.post('/bakery925',(req,res)=>{<br>
     console.log(req.body);<br>
 })
