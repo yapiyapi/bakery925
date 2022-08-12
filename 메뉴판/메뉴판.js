@@ -1,3 +1,5 @@
+
+
 function cal() {
     var n1 = document.getElementById("book1").value;
     var n2 = document.getElementById("book2").value;
@@ -269,17 +271,100 @@ function click2(e) {
 
 
 function purchaseHistory(){
-    let name1 = $('#name').val()
-    let comment1 = $('#comment').val()
+    var n1 = document.getElementById("book1").value;
+    var n2 = document.getElementById("book2").value;
+    var n3 = document.getElementById("book3").value;
+    var n4 = document.getElementById("book4").value;
+    var n5 = document.getElementById("book5").value;
+    var n6 = document.getElementById("book6").value;
+    var n7 = document.getElementById("book7").value;
+    var n8 = document.getElementById("book8").value;
+    var n9 = document.getElementById("book9").value;
+    var n10 = document.getElementById("book10").value;
+    var n11 = document.getElementById("book11").value;
+    var n12 = document.getElementById("book12").value;
+    var n13 = document.getElementById("book13").value;
+    var n14 = document.getElementById("book14").value;
+    var n15 = document.getElementById("book15").value;
+    var n16 = document.getElementById("book16").value;
+    var n17 = document.getElementById("book17").value;
+    var n18 = document.getElementById("book18").value;
+    var n19 = document.getElementById("book19").value;
+    var n20 = document.getElementById("book20").value;
+    var n21 = document.getElementById("book21").value;
+    var n22 = document.getElementById("book22").value;
+    var n23 = document.getElementById("book23").value;
+    var n24 = document.getElementById("book24").value;
+    var n25 = document.getElementById("book25").value;
+    var n26 = document.getElementById("book26").value;
+    var n27 = document.getElementById("book27").value;
+    var n28 = document.getElementById("book28").value;
+    var n29 = document.getElementById("book29").value;
+    var n30 = document.getElementById("book30").value;
+    var n31 = document.getElementById("book31").value;
+    var n32 = document.getElementById("book32").value;
+    var n33 = document.getElementById("book33").value;
+    
+var p1 = 2000* n1;
+var p2 = 2000* n2;
+var p3 = 2000* n3;
 
-    $.ajax({
-        type: 'POST',
-        url: '/bakery925',
-        data: {num_give : `num` , name_give : 'name', price_give : 'price'},
-        success: function (response) {
-            alert(response['msg'])
-            window.location.reload()
-        }
+var p4 = 1200* n4;
+var p5 = 2000* n5;
+var p6 = 2000* n6;
+
+var p7 = 2800* n7;
+var p8 = 2000* n8;
+var p9 = 4000* n9;
+
+var p10 = 4000* n10;
+var p11 = 2400* n11;
+var p12 = 3500* n12;
+
+var p13 = 2800* n13;
+var p14 = 3200* n14;
+var p15 = 3500* n15;
+
+var p16 = 2000* n16;
+var p17 = 3500* n17;
+var p18 = 1300* n18;
+
+var p19 = 1500* n19;
+var p20 = 3000* n20;
+var p21 = 3500* n21;
+
+var p22 = 3500* n22;
+var p23 = 1800* n23;
+var p24 = 1800* n24;
+
+var p25 = 2000* n25;
+var p26 = 1800* n26;
+var p27 = 6500* n27;
+
+var p28 = 1800* n28;
+var p29 = 1800* n29;
+var p30 = 1800* n30;
+
+var p31 = 1300* n31;
+var p32 = 1300* n32;
+var p33 = 7000* n33;
+
+var totalPrice =p1 + p2 + p3+ p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 
++ p12 + p13 + p14 + p15 + p16 + p17 + p18 + p19 + p20 + p21 + p22 + p23
++ p24+p25+p26+p27+p28+p29+p30+p31+p32+p33;
+
+    const req = {
+        name : 'name',
+        price : 'price',
+        count : 'count',
+        allPrice: parseInt(totalPrice),
+    }
+    console.log(req)
+    fetch('/bakery925',{
+        method:'POST',
+        headers: {
+            'Content-Type':'application/json',
+        },
+        body:JSON.stringify(req), 
     })
-    console.log('hi');
-}
+    }
